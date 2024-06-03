@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#game {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#click-area {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#click-button {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#upgrades {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.upgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upgrade img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+@keyframes click-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#click-button:active {
+    animation: click-animation 0.1s ease-in-out;
+}
